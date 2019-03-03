@@ -1,8 +1,9 @@
 # GUI-Parser
 This program generate GUI using a defined GUI grammar language and parses using recursive descent.
 
-GUI Grammar Language:
 
+GUI Grammar Language:
+```
 gui ::=
         Window STRING '(' NUMBER ',' NUMBER ')' layout widgets End '.'
     layout ::=
@@ -24,8 +25,10 @@ gui ::=
         radio_button
     radio_button ::=
         Radio STRING ';'
-Input File:
+```
 
+Input File:
+```
 Window "Calculator" (200, 200) Layout Flow:
 	Textfield 20;
 	Panel Layout Grid(4, 3, 5, 5):
@@ -42,3 +45,4 @@ Window "Calculator" (200, 200) Layout Flow:
 		Button "0";
 	End;
 End.
+```
